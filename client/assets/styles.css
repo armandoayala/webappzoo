@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+
+h3 a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.pointer
+{
+	cursor: pointer;
+}
+
+.navigation.col-lg-12
+{
+	margin-top: 10px;
+}
+
+.jumbotron
+{
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #ccc;
+}
+
+.jumbotron p > a
+{
+	margin-left: 5px;
+}
+
+.navbar-nav .active
+{
+	border-bottom: 3px solid orange;
+}
+
+.app-action
+{
+	margin-left: 3px;
+}
+
+.image_for_edit
+{
+	width: 60px;
+}
+
+.avatar
+{
+	width: 35px;
+	height: 35px;
+	border-radius: 700px;
+	overflow: hidden;
+	margin-top:8px;
+}
+
+.avatar img
+{
+	height: 45px;
+}
+
+.animal-image-mask,
+.keeper-image-mask
+{
+	width:100%x;
+	height: 200px;
+	overflow: hidden;
+}
+
+.boton_transiciones
+{
+	padding:10px;
+	background: red;
+	color: white;
+	border-radius: 20px;
+	border: 4px solid green;
+	transition:border 2s, border-radius 500ms, background 5s;
+	display: block;
+	width: 150px;
+}
+
+.boton_transiciones:hover
+{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 2px;
+	background: #ccc;
+	border: 1px solid red;
+}
+
+.caja_animada
+{
+	background:green;
+	border:5px solid black;
+	width:200px;
+	height: 200px;
+	margin-top: 10px;
+	/*animation-name: rotacion;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;*/
+}
+
+@keyframes rotacion
+{
+	from
+	{
+	   margin-left: 0px;
+	   transform: rotate(0deg);
+	}
+	to
+	{
+       transform: rotate(360deg);
+       margin-left: 600px;
+	}
+}
+
+@keyframes deslizamiento1
+{
+	0%
+	{
+	   margin-left: 0px;
+	}
+	25%
+	{
+      margin-left: 400px;
+      background: red;
+      border-radius: 1000px;
+	}
+	50%
+	{
+	   border-radius: 1000px;
+	}
+	75%
+	{
+      margin-left: 0px;
+      background: yellow;
+      border-radius: 0px;
+	}
+	100%
+	{
+      background: green;
+	}
+}
+
+@keyframes deslizamiento
+{
+	from
+	{
+	   margin-left: 0px;
+	}
+	to
+	{
+      margin-left: 400px;
+      background: red;
+	}
+}
+
+
+
